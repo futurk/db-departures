@@ -9,6 +9,7 @@ import Toybox.PersistedContent;
 
 class DBDeparturesView extends WatchUi.DataField {
 
+    private const USER_AGENT = "DBDepartures/1.0.0 (https://github.com/futurk/DBDepartures; contact@example.com)";
     private var mDepartures as Array<Dictionary> = [];
     private var mStatusMessage as String = "Searching Destination...";
     private var mLastFetchTime as Number = 0;
@@ -27,7 +28,7 @@ class DBDeparturesView extends WatchUi.DataField {
 
         // Header Title
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(width / 2, 5, Graphics.FONT_SMALL, "DB Departures", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, 5, Graphics.FONT_SMALL, "Transitous Departures", Graphics.TEXT_JUSTIFY_CENTER);
 
         checkAndFetchDepartures();
 
@@ -66,108 +67,135 @@ class DBDeparturesView extends WatchUi.DataField {
         }
 
         var info = Activity.getActivityInfo();
+        var lat = null;
+        var lon = null;
         
         if (info has :destination && info.destination != null) {
             var dest = info.destination;
-            if (dest != null) {
-                var location = dest.toDegrees();
-                var lat = (location as Array<Double>)[0];
-                var lon = (location as Array<Double>)[1];
-
-                mStatusMessage = "Fetching DB Data...";
-                mLastFetchTime = now;
-                
-                fetchNearestStation(lat, lon);
-            }
-        } else {
-            mStatusMessage = "No Active Destination";
+            var location = dest.toDegrees();
+            lat = (location as Array<Double>)[0];
+            lon = (location as Array<Double>)[1];
         }
+
+        // SIMULATOR MOCK: Defaults to Berlin Hbf if no destination is active
+        if (lat == null || lon == null) {
+            lat = 52.5251;
+            lon = 13.3694;
+        }
+
+        mStatusMessage = "Fetching Transitous...";
+        mLastFetchTime = now;
+        
+        fetchNearestStation(lat as Double, lon as Double);
     }
 
     private function fetchNearestStation(lat as Double, lon as Double) as Void {
-        var url = "https://v6.db.transport.rest/locations/nearby";
+        var url = "https://api.transitous.org/api/v1/reverse-geocode";
+        
         var params = {
-            "latitude" => lat.toString(),
-            "longitude" => lon.toString(),
-            "results" => "1",
-            "stops" => "true",
-            "poi" => "false"
+            "lat" => lat.toString(),
+            "lon" => lon.toString()
         };
         
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_GET,
-            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON,
+            :headers => {
+                "User-Agent" => USER_AGENT
+            }
         };
 
         Communications.makeWebRequest(url, params, options, method(:onStationReceived));
     }
 
-    // Fixed parameter type signature matching Garmin's strict web request requirement
     function onStationReceived(responseCode as Number, data as Null or Dictionary or String or PersistedContent.Iterator) as Void {
-            if (responseCode == 200 && data != null) {
-                // Cast to Object to allow type checking and casting to Array without compiler warnings
-                var rawData = data as Object;
-                if (rawData instanceof Array) {
-                    var arrayData = rawData as Array;
-                    if (arrayData.size() > 0) {
-                        var firstStation = arrayData[0] as Dictionary;
-                        var stationId = firstStation.get("id") as String;
-                        mStationName = firstStation.get("name") as String;
+        if (responseCode == 200 && data != null) {
+            var rawData = data as Object;
+            
+            // Reverse-geocode returns a Dictionary object with the nearest stop details
+            if (rawData instanceof Dictionary) {
+                var stationDict = rawData as Dictionary;
+                if (stationDict.hasKey("id")) {
+                    var stationId = stationDict.get("id") as String;
+                    
+                    if (stationDict.hasKey("name") && stationDict.get("name") != null) {
+                        mStationName = stationDict.get("name") as String;
+                    }
+                    
+                    fetchDeparturesForStation(stationId);
+                    return;
+                }
+            } 
+            // Fallback if the endpoint returns an Array of nearest stops sorted by distance
+            else if (rawData instanceof Array) {
+                var arrayData = rawData as Array;
+                if (arrayData.size() > 0) {
+                    var nearestStation = arrayData[0] as Dictionary;
+                    if (nearestStation.hasKey("id")) {
+                        var stationId = nearestStation.get("id") as String;
+                        if (nearestStation.hasKey("name") && nearestStation.get("name") != null) {
+                            mStationName = nearestStation.get("name") as String;
+                        }
                         
                         fetchDeparturesForStation(stationId);
                         return;
                     }
                 }
             }
-            mStatusMessage = "Station Not Found";
-            System.println("Station Lookup Error: " + responseCode);
         }
+        
+        mStatusMessage = "Station Not Found";
+        System.println("Reverse Geocode Error: " + responseCode);
+    }
 
     private function fetchDeparturesForStation(stationId as String) as Void {
-        var url = "https://v6.db.transport.rest/stops/" + stationId + "/departures";
+        var url = "https://api.transitous.org/api/v6/stoptimes";
         var params = {
-            "results" => "3",
-            "duration" => "60",
-            "remarks" => "false",
-            "linesOfStops" => "false"
+            "stopId" => stationId,
+            "n" => "3"
         };
 
         var options = {
             :method => Communications.HTTP_REQUEST_METHOD_GET,
-            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON,
+            :headers => {
+                "User-Agent" => USER_AGENT
+            }
         };
 
         Communications.makeWebRequest(url, params, options, method(:onDeparturesReceived));
     }
 
-    // Fixed parameter type signature matching Garmin's strict web request requirement
     function onDeparturesReceived(responseCode as Number, data as Null or Dictionary or String or PersistedContent.Iterator) as Void {
         if (responseCode == 200 && data != null && data instanceof Dictionary) {
             mDepartures = [];
             
             var dictData = data as Dictionary;
-            if (dictData.hasKey("departures") && dictData.get("departures") instanceof Array) {
-                var departuresList = dictData.get("departures") as Array;
+            if (dictData.hasKey("stoptimes") && dictData.get("stoptimes") instanceof Array) {
+                var departuresList = dictData.get("stoptimes") as Array;
                 
                 for (var i = 0; i < departuresList.size(); i++) {
                     var dep = departuresList[i] as Dictionary;
                     
                     var lineName = "Train";
-                    if (dep.hasKey("line") && dep.get("line") instanceof Dictionary) {
-                        var lineDict = dep.get("line") as Dictionary;
-                        if (lineDict.hasKey("name") && lineDict.get("name") != null) {
-                            lineName = lineDict.get("name") as String;
-                        }
+                    if (dep.hasKey("line") && dep.get("line") != null) {
+                        lineName = dep.get("line") as String;
+                    } else if (dep.hasKey("displayName") && dep.get("displayName") != null) {
+                        lineName = dep.get("displayName") as String;
                     }
 
                     var direction = "Unknown";
-                    if (dep.hasKey("direction") && dep.get("direction") != null) {
+                    if (dep.hasKey("headsign") && dep.get("headsign") != null) {
+                        direction = dep.get("headsign") as String;
+                    } else if (dep.hasKey("direction") && dep.get("direction") != null) {
                         direction = dep.get("direction") as String;
                     }
 
                     var rawTime = "";
-                    if (dep.hasKey("when") && dep.get("when") != null) {
-                        rawTime = dep.get("when") as String;
+                    if (dep.hasKey("time") && dep.get("time") != null) {
+                        rawTime = dep.get("time") as String;
+                    } else if (dep.hasKey("scheduledTime") && dep.get("scheduledTime") != null) {
+                        rawTime = dep.get("scheduledTime") as String;
                     }
                     
                     var formattedTime = "";
@@ -189,7 +217,7 @@ class DBDeparturesView extends WatchUi.DataField {
                 mStatusMessage = "No Trains Nearby";
             }
         } else {
-            mStatusMessage = "DB Fetch Error (" + responseCode + ")";
+            mStatusMessage = "Transitous Error (" + responseCode + ")";
             System.println("Departure Fetch Error: " + responseCode);
         }
     }

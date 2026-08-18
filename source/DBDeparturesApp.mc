@@ -20,9 +20,4 @@ class DBDeparturesApp extends Application.AppBase {
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new DBDeparturesView() ];
     }
-
-}
-
-function getApp() as DBDeparturesApp {
-    return Application.getApp() as DBDeparturesApp;
 }

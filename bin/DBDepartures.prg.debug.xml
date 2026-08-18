@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/futurk/Documents/DBDepartures/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="1" lineNum="5" parent="globals/DBDeparturesApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/bin/gen/006-B3843-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435472" symbol="&lt;init&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="3" lineNum="10" parent="globals/DBDeparturesView" pc="268435492" symbol="&lt;init&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="3" lineNum="12" parent="globals/DBDeparturesView" pc="268435503" symbol="&lt;init&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="4" lineNum="12" parent="globals/DBDeparturesApp" pc="268435513" symbol="onStart"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="5" lineNum="20" parent="globals/DBDeparturesApp" pc="268435516" symbol="getInitialView"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="5" lineNum="21" parent="globals/DBDeparturesApp" pc="268435518" symbol="getInitialView"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="6" lineNum="7" parent="globals/DBDeparturesApp" pc="268435544" symbol="initialize"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="6" lineNum="8" parent="globals/DBDeparturesApp" pc="268435546" symbol="initialize"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesApp.mc" id="7" lineNum="16" parent="globals/DBDeparturesApp" pc="268435559" symbol="onStop"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="61" parent="globals/DBDeparturesView" pc="268435562" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="62" parent="globals/DBDeparturesView" pc="268435565" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="64" parent="globals/DBDeparturesView" pc="268435583" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="65" parent="globals/DBDeparturesView" pc="268435597" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="68" parent="globals/DBDeparturesView" pc="268435601" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="69" parent="globals/DBDeparturesView" pc="268435613" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="70" parent="globals/DBDeparturesView" pc="268435616" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="72" parent="globals/DBDeparturesView" pc="268435619" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="73" parent="globals/DBDeparturesView" pc="268435641" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="74" parent="globals/DBDeparturesView" pc="268435650" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="75" parent="globals/DBDeparturesView" pc="268435659" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="76" parent="globals/DBDeparturesView" pc="268435665" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="80" parent="globals/DBDeparturesView" pc="268435675" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="81" parent="globals/DBDeparturesView" pc="268435687" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="82" parent="globals/DBDeparturesView" pc="268435694" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="85" parent="globals/DBDeparturesView" pc="268435704" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="86" parent="globals/DBDeparturesView" pc="268435716" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="8" lineNum="88" parent="globals/DBDeparturesView" pc="268435725" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="9" lineNum="91" parent="globals/DBDeparturesView" pc="268435739" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="9" lineNum="92" parent="globals/DBDeparturesView" pc="268435742" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="9" lineNum="93" parent="globals/DBDeparturesView" pc="268435749" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="9" lineNum="101" parent="globals/DBDeparturesView" pc="268435784" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="9" lineNum="110" parent="globals/DBDeparturesView" pc="268435817" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="114" parent="globals/DBDeparturesView" pc="268435850" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="115" parent="globals/DBDeparturesView" pc="268435853" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="117" parent="globals/DBDeparturesView" pc="268435868" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="118" parent="globals/DBDeparturesView" pc="268435872" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="119" parent="globals/DBDeparturesView" pc="268435887" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="120" parent="globals/DBDeparturesView" pc="268435891" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="121" parent="globals/DBDeparturesView" pc="268435903" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="122" parent="globals/DBDeparturesView" pc="268435909" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="123" parent="globals/DBDeparturesView" pc="268435925" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="125" parent="globals/DBDeparturesView" pc="268435946" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="126" parent="globals/DBDeparturesView" pc="268435957" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="130" parent="globals/DBDeparturesView" pc="268435967" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="10" lineNum="131" parent="globals/DBDeparturesView" pc="268435979" symbol="onStationReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="11" lineNum="17" parent="globals/DBDeparturesView" pc="268436001" symbol="initialize"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="11" lineNum="18" parent="globals/DBDeparturesView" pc="268436003" symbol="initialize"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="152" parent="globals/DBDeparturesView" pc="268436016" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="153" parent="globals/DBDeparturesView" pc="268436019" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="154" parent="globals/DBDeparturesView" pc="268436049" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="156" parent="globals/DBDeparturesView" pc="268436058" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="157" parent="globals/DBDeparturesView" pc="268436062" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="158" parent="globals/DBDeparturesView" pc="268436106" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="160" parent="globals/DBDeparturesView" pc="268436122" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="161" parent="globals/DBDeparturesView" pc="268436138" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="163" parent="globals/DBDeparturesView" pc="268436145" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="164" parent="globals/DBDeparturesView" pc="268436152" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="165" parent="globals/DBDeparturesView" pc="268436196" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="166" parent="globals/DBDeparturesView" pc="268436212" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="167" parent="globals/DBDeparturesView" pc="268436247" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="171" parent="globals/DBDeparturesView" pc="268436269" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="172" parent="globals/DBDeparturesView" pc="268436276" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="173" parent="globals/DBDeparturesView" pc="268436311" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="176" parent="globals/DBDeparturesView" pc="268436330" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="177" parent="globals/DBDeparturesView" pc="268436337" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="178" parent="globals/DBDeparturesView" pc="268436372" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="181" parent="globals/DBDeparturesView" pc="268436391" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="182" parent="globals/DBDeparturesView" pc="268436398" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="183" parent="globals/DBDeparturesView" pc="268436411" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="186" parent="globals/DBDeparturesView" pc="268436429" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="192" parent="globals/DBDeparturesView" pc="268436460" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="196" parent="globals/DBDeparturesView" pc="268436489" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="197" parent="globals/DBDeparturesView" pc="268436505" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="200" parent="globals/DBDeparturesView" pc="268436523" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="12" lineNum="201" parent="globals/DBDeparturesView" pc="268436544" symbol="onDeparturesReceived"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="21" parent="globals/DBDeparturesView" pc="268436566" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="22" parent="globals/DBDeparturesView" pc="268436569" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="23" parent="globals/DBDeparturesView" pc="268436585" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="25" parent="globals/DBDeparturesView" pc="268436593" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="26" parent="globals/DBDeparturesView" pc="268436602" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="29" parent="globals/DBDeparturesView" pc="268436611" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="30" parent="globals/DBDeparturesView" pc="268436627" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="32" parent="globals/DBDeparturesView" pc="268436653" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="34" parent="globals/DBDeparturesView" pc="268436660" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="35" parent="globals/DBDeparturesView" pc="268436676" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="37" parent="globals/DBDeparturesView" pc="268436680" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="38" parent="globals/DBDeparturesView" pc="268436696" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="39" parent="globals/DBDeparturesView" pc="268436709" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="40" parent="globals/DBDeparturesView" pc="268436735" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="43" parent="globals/DBDeparturesView" pc="268436745" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="44" parent="globals/DBDeparturesView" pc="268436776" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="45" parent="globals/DBDeparturesView" pc="268436786" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="46" parent="globals/DBDeparturesView" pc="268436802" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="47" parent="globals/DBDeparturesView" pc="268436818" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="49" parent="globals/DBDeparturesView" pc="268436834" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="51" parent="globals/DBDeparturesView" pc="268436862" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="52" parent="globals/DBDeparturesView" pc="268436878" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="53" parent="globals/DBDeparturesView" pc="268436897" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="56" parent="globals/DBDeparturesView" pc="268436917" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="13" lineNum="57" parent="globals/DBDeparturesView" pc="268436934" symbol="onUpdate"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="14" lineNum="134" parent="globals/DBDeparturesView" pc="268436964" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="14" lineNum="135" parent="globals/DBDeparturesView" pc="268436967" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="14" lineNum="136" parent="globals/DBDeparturesView" pc="268436983" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="14" lineNum="143" parent="globals/DBDeparturesView" pc="268436990" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;"/>
+        <entry filename="/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" id="14" lineNum="148" parent="globals/DBDeparturesView" pc="268437012" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="12" symbol="&lt;globals/DBDeparturesView/&lt;&gt;mStationName&gt;"/>
+        <entry field="true" id="11" symbol="&lt;globals/DBDeparturesView/&lt;&gt;mLastFetchTime&gt;"/>
+        <entry id="8" method="true" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;"/>
+        <entry id="18" symbol="destination"/>
+        <entry id="9" method="true" symbol="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="13" symbol="&lt;globals/DBDeparturesView/&lt;&gt;mStatusMessage&gt;"/>
+        <entry field="true" id="17" symbol="AppName"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389594" symbol="headers"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="15" method="true" symbol="onStationReceived"/>
+        <entry id="5" object="true" symbol="DBDeparturesApp"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="7" method="true" symbol="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389844" symbol="responseType"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="16" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="6" object="true" symbol="DBDeparturesView"/>
+        <entry id="8389953" module="true" symbol="PersistedContent"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="14" method="true" symbol="onDeparturesReceived"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="10" symbol="&lt;globals/DBDeparturesView/&lt;&gt;mDepartures&gt;"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435737" name="now" stackId="1" startPc="268435565"/>
+        <entry endPc="268435737" name="info" stackId="2" startPc="268435565"/>
+        <entry endPc="268435737" name="lat" stackId="3" startPc="268435565"/>
+        <entry endPc="268435737" name="lon" stackId="4" startPc="268435565"/>
+        <entry endPc="268435671" name="dest" stackId="5" startPc="268435641"/>
+        <entry endPc="268435671" name="location" stackId="6" startPc="268435641"/>
+        <entry arg="true" endPc="268435849" name="lat" stackId="1" startPc="268435739"/>
+        <entry arg="true" endPc="268435849" name="lon" stackId="2" startPc="268435739"/>
+        <entry endPc="268435848" name="url" stackId="3" startPc="268435742"/>
+        <entry endPc="268435848" name="params" stackId="4" startPc="268435742"/>
+        <entry endPc="268435848" name="options" stackId="5" startPc="268435742"/>
+        <entry arg="true" endPc="268436000" name="responseCode" stackId="1" startPc="268435850"/>
+        <entry arg="true" endPc="268436000" name="data" stackId="2" startPc="268435850"/>
+        <entry endPc="268435963" name="rawData" stackId="3" startPc="268435868"/>
+        <entry endPc="268435960" name="arrayData" stackId="4" startPc="268435887"/>
+        <entry endPc="268435957" name="firstStation" stackId="5" startPc="268435903"/>
+        <entry endPc="268435957" name="stationId" stackId="6" startPc="268435903"/>
+        <entry arg="true" endPc="268436565" name="responseCode" stackId="1" startPc="268436016"/>
+        <entry arg="true" endPc="268436565" name="data" stackId="2" startPc="268436016"/>
+        <entry endPc="268436519" name="dictData" stackId="3" startPc="268436049"/>
+        <entry endPc="268436485" name="departuresList" stackId="4" startPc="268436106"/>
+        <entry endPc="268436485" name="i" stackId="5" startPc="268436138"/>
+        <entry endPc="268436475" name="dep" stackId="6" startPc="268436138"/>
+        <entry endPc="268436475" name="lineName" stackId="7" startPc="268436138"/>
+        <entry endPc="268436265" name="lineDict" stackId="8" startPc="268436196"/>
+        <entry endPc="268436475" name="direction" stackId="9" startPc="268436138"/>
+        <entry endPc="268436475" name="rawTime" stackId="10" startPc="268436138"/>
+        <entry endPc="268436475" name="formattedTime" stackId="11" startPc="268436138"/>
+        <entry endPc="268436475" name="item" stackId="12" startPc="268436138"/>
+        <entry arg="true" endPc="268436963" name="dc" stackId="1" startPc="268436566"/>
+        <entry endPc="268436962" name="width" stackId="2" startPc="268436569"/>
+        <entry endPc="268436962" name="height" stackId="3" startPc="268436569"/>
+        <entry endPc="268436913" name="yPos" stackId="4" startPc="268436676"/>
+        <entry endPc="268436913" name="i" stackId="5" startPc="268436776"/>
+        <entry endPc="268436903" name="item" stackId="6" startPc="268436776"/>
+        <entry endPc="268436903" name="lineVal" stackId="7" startPc="268436776"/>
+        <entry endPc="268436903" name="dirVal" stackId="8" startPc="268436776"/>
+        <entry endPc="268436903" name="timeVal" stackId="9" startPc="268436776"/>
+        <entry endPc="268436903" name="lineText" stackId="10" startPc="268436776"/>
+        <entry arg="true" endPc="268437044" name="stationId" stackId="1" startPc="268436964"/>
+        <entry endPc="268437043" name="url" stackId="2" startPc="268436967"/>
+        <entry endPc="268437043" name="params" stackId="3" startPc="268436967"/>
+        <entry endPc="268437043" name="options" stackId="4" startPc="268436967"/>
+    </localVars>
+    <deviceInfo deviceVersion="361e256b74f66f7ba19da23c7ec7c7f06ab33c5c" partNumber="006-B3843-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/DBDeparturesApp" offset="107" parentId="globals" symbolId="DBDeparturesApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="178" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/DBDeparturesView" offset="222" parentId="globals" symbolId="DBDeparturesView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="356" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="391" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="DBDeparturesApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435491" name="&lt;init&gt;" parent="Rez" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="DBDeparturesView" startPc="268435492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435515" name="onStart" parent="DBDeparturesApp" startPc="268435513">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435543" name="getInitialView" parent="DBDeparturesApp" startPc="268435516">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435558" name="initialize" parent="DBDeparturesApp" startPc="268435544">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435561" name="onStop" parent="DBDeparturesApp" startPc="268435559">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435738" name="&lt;globals/DBDeparturesView/&lt;&gt;checkAndFetchDepartures&gt;" parent="DBDeparturesView" startPc="268435562">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435849" name="&lt;globals/DBDeparturesView/&lt;&gt;fetchNearestStation&gt;" parent="DBDeparturesView" startPc="268435739">
+            <param id="lat"/>
+            <param id="lon"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436000" name="onStationReceived" parent="DBDeparturesView" startPc="268435850">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436015" name="initialize" parent="DBDeparturesView" startPc="268436001">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436565" name="onDeparturesReceived" parent="DBDeparturesView" startPc="268436016">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436963" name="onUpdate" parent="DBDeparturesView" startPc="268436566">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437044" name="&lt;globals/DBDeparturesView/&lt;&gt;fetchDeparturesForStation&gt;" parent="DBDeparturesView" startPc="268436964">
+            <param id="stationId"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
