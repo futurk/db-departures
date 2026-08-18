@@ -1,0 +1,44 @@
+[ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Activity,1,14,22]; ]
+import Toybox.Activity;
+[ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Time,3,14,18]; ]
+import Toybox.Time;
+[ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 6; @symbol_classdef = [DBDeparturesView,6,6,22]; @symbol_extends<0> = [WatchUi,6,31,38]; @symbol_extends<1> = [SimpleDataField,6,39,54]; ]
+class DBDeparturesView extends WatchUi.SimpleDataField {
+    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_9_26_12_4_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 10 8 ]
+        symbol [ SimpleDataField %tmp.2 10 8 23 ];
+        %tmp.2 = getv ? :SimpleDataField;
+        symbol [ initialize %tmp.3 10 24 34 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 11 8 ]
+        %tmp.4 = "My Label";
+        symbol [ label ? 11 8 13 ];
+        putv self :label %tmp.4;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_9_26_12_4_stop:
+    }
+    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 18; @symbol_functiondef = [compute,18,13,20]; @symbol_param<0> = [info,18,21,25]; @symbol_param<0>_type<0> = [Activity,18,29,37]; @symbol_param<0>_type<1> = [Info,18,38,42]; @symbol_return<0> = [Numeric,18,47,54]; @symbol_return<1> = [Duration,18,58,66]; @symbol_return<2> = [String,18,70,76]; ]
+    function compute(info as Activity.Info) as Numeric or Duration or String or Null {
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_18_85_21_4_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 20 8 ]
+        %tmp.1 = 0.0;
+        ret %tmp.1;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_18_85_21_4_stop:
+    }
+}
+[ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 1; ]
+<init> {
+}
