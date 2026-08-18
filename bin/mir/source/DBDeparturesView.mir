@@ -665,149 +665,161 @@ _home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_87_79_103_4_stop:
     }
     [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 106; @symbol_functiondef = [onStationReceived,106,13,30]; @symbol_param<0> = [responseCode,106,31,43]; @symbol_param<0>_type<0> = [Number,106,47,53]; @symbol_param<1> = [data,106,55,59]; @symbol_param<1>_type<0> = [Dictionary,106,71,81]; @symbol_param<1>_type<1> = [String,106,85,91]; @symbol_param<1>_type<2> = [PersistedContent,106,95,111]; @symbol_param<1>_type<3> = [Iterator,106,112,120]; ]
     function onStationReceived(responseCode as Number, data as Null or Dictionary or String or PersistedContent.Iterator) as Void {
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_106_130_120_4_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 107 8 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_107_67_begin:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_107_43_begin:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_106_130_124_8_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 107 12 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_121_12_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_16_107_47_begin:
         %tmp.1 = lgetv %responseCode;
-        symbol [ responseCode %tmp.1 107 12 24 ];
+        symbol [ responseCode %tmp.1 107 16 28 ];
         %tmp.2 = 200;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_35_107_43_true:
+        bf %tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_121_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_39_107_47_true:
         %tmp.4 = lgetv %data;
-        symbol [ data %tmp.4 107 35 39 ];
+        symbol [ data %tmp.4 107 39 43 ];
         %tmp.5 = null;
         %tmp.6 = ne %tmp.4 %tmp.5;
         push %tmp.6;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_35_107_43_end:
-        %tmp.7 = phi [%tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_107_43_begin] [%tmp.6 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_35_107_43_true] [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_35_107_43_end];
-        bf %tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_51_107_67_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_39_107_47_end:
+        %tmp.7 = phi [%tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_16_107_47_begin] [%tmp.6 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_39_107_47_true] [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_39_107_47_end];
+        bf %tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_121_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_121_12_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_53_121_12_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 109 16 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_53_121_12_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_53_121_12_stop" ]
+        %rawData.1 = local;
+        symbol [ rawData %rawData.1 109 20 27 ];
         %tmp.8 = lgetv %data;
-        symbol [ data %tmp.8 107 51 55 ];
+        symbol [ data %tmp.8 109 30 34 ];
         %tmp.9 = as %tmp.8 { (!Null) };
-        symbol [ Array %tmp.11 107 67 72 ];
-        %tmp.11 = getv ? :Array;
-        %tmp.12 = isa %tmp.9 %tmp.11;
-        push %tmp.12;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_51_107_67_end:
-        %tmp.13 = phi [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_107_67_begin] [%tmp.12 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_51_107_67_true] [%tmp.13 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_51_107_67_end];
-        bf %tmp.13 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_74_117_8_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 108 12 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_74_117_8_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_74_117_8_stop" ]
-        %arrayData.1 = local;
-        symbol [ arrayData %arrayData.1 108 16 25 ];
-        %tmp.14 = lgetv %data;
-        symbol [ data %tmp.14 108 28 32 ];
-        %tmp.15 = as %tmp.14 { (Array) && (!Null) };
-        %tmp.16 = as %tmp.15 Array;
-        symbol [ Array %tmp.16 108 36 41 ];
-        lputv %arrayData.1 %tmp.16;
-        symbol [ arrayData %arrayData.1 108 16 25 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 109 12 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_12_116_12_if_stmt:
-        %tmp.17 = lgetv %arrayData.1;
-        symbol [ arrayData %tmp.17 109 16 25 ];
-        symbol [ size %tmp.18 109 26 30 ];
-        %tmp.18 = getv function %tmp.17 :size;
-        %tmp.19 = invoke %tmp.17 %tmp.18();
-        %tmp.20 = 0;
-        %tmp.21 = gt %tmp.19 %tmp.20;
-        bf %tmp.21 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_12_116_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_12_116_12_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_38_116_12_start:
+        %tmp.10 = as %tmp.9 Object;
+        symbol [ Object %tmp.10 109 38 44 ];
+        lputv %rawData.1 %tmp.10;
+        symbol [ rawData %rawData.1 109 20 27 ];
 [ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 110 16 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_38_116_12_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_38_116_12_stop" ]
-        %firstStation.2 = local;
-        symbol [ firstStation %firstStation.2 110 20 32 ];
-        %tmp.22 = lgetv %arrayData.1;
-        symbol [ arrayData %tmp.22 110 35 44 ];
-        %tmp.23 = 0;
-        %tmp.24 = agetv %tmp.22 %tmp.23;
-        %tmp.25 = as %tmp.24 Dictionary;
-        symbol [ Dictionary %tmp.25 110 51 61 ];
-        lputv %firstStation.2 %tmp.25;
-        symbol [ firstStation %firstStation.2 110 20 32 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 111 16 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_38_116_12_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_38_116_12_stop" ]
-        %stationId.3 = local;
-        symbol [ stationId %stationId.3 111 20 29 ];
-        %tmp.26 = lgetv %firstStation.2;
-        symbol [ firstStation %tmp.26 111 32 44 ];
-        symbol [ get %tmp.27 111 45 48 ];
-        %tmp.27 = getv function %tmp.26 :get;
-        %tmp.28 = "id";
-        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
-        %tmp.30 = as %tmp.29 String;
-        symbol [ String %tmp.30 111 58 64 ];
-        lputv %stationId.3 %tmp.30;
-        symbol [ stationId %stationId.3 111 20 29 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 112 16 ]
-        %tmp.31 = lgetv %firstStation.2;
-        symbol [ firstStation %tmp.31 112 31 43 ];
-        symbol [ get %tmp.32 112 44 47 ];
-        %tmp.32 = getv function %tmp.31 :get;
-        %tmp.33 = "name";
-        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
-        %tmp.35 = as %tmp.34 String;
-        symbol [ String %tmp.35 112 59 65 ];
-        symbol [ mStationName ? 112 16 28 ];
-        putv self :mStationName %tmp.35;
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 114 16 ]
-        %tmp.36 = self;
-        symbol [ fetchDeparturesForStation %tmp.37 114 16 41 ];
-        %tmp.37 = getv function %tmp.36 :fetchDeparturesForStation;
-        %tmp.38 = lgetv %stationId.3;
-        symbol [ stationId %tmp.38 114 42 51 ];
-        invoke %tmp.36 %tmp.37(%tmp.38);
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 115 16 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_16_120_16_if_stmt:
+        %tmp.11 = lgetv %rawData.1;
+        symbol [ rawData %tmp.11 110 20 27 ];
+        symbol [ Array %tmp.13 110 39 44 ];
+        %tmp.13 = getv ? :Array;
+        %tmp.14 = isa %tmp.11 %tmp.13;
+        bf %tmp.14 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_16_120_16_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_16_120_16_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_46_120_16_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 111 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_46_120_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_46_120_16_stop" ]
+        %arrayData.2 = local;
+        symbol [ arrayData %arrayData.2 111 24 33 ];
+        %tmp.15 = lgetv %rawData.1;
+        symbol [ rawData %tmp.15 111 36 43 ];
+        %tmp.16 = as %tmp.15 { (Array) };
+        %tmp.17 = as %tmp.16 Array;
+        symbol [ Array %tmp.17 111 47 52 ];
+        lputv %arrayData.2 %tmp.17;
+        symbol [ arrayData %arrayData.2 111 24 33 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 112 20 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_20_119_20_if_stmt:
+        %tmp.18 = lgetv %arrayData.2;
+        symbol [ arrayData %tmp.18 112 24 33 ];
+        symbol [ size %tmp.19 112 34 38 ];
+        %tmp.19 = getv function %tmp.18 :size;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        %tmp.21 = 0;
+        %tmp.22 = gt %tmp.20 %tmp.21;
+        bf %tmp.22 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_20_119_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_20_119_20_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_46_119_20_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 113 24 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_46_119_20_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_46_119_20_stop" ]
+        %firstStation.3 = local;
+        symbol [ firstStation %firstStation.3 113 28 40 ];
+        %tmp.23 = lgetv %arrayData.2;
+        symbol [ arrayData %tmp.23 113 43 52 ];
+        %tmp.24 = 0;
+        %tmp.25 = agetv %tmp.23 %tmp.24;
+        %tmp.26 = as %tmp.25 Dictionary;
+        symbol [ Dictionary %tmp.26 113 59 69 ];
+        lputv %firstStation.3 %tmp.26;
+        symbol [ firstStation %firstStation.3 113 28 40 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 114 24 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_46_119_20_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_46_119_20_stop" ]
+        %stationId.4 = local;
+        symbol [ stationId %stationId.4 114 28 37 ];
+        %tmp.27 = lgetv %firstStation.3;
+        symbol [ firstStation %tmp.27 114 40 52 ];
+        symbol [ get %tmp.28 114 53 56 ];
+        %tmp.28 = getv function %tmp.27 :get;
+        %tmp.29 = "id";
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        %tmp.31 = as %tmp.30 String;
+        symbol [ String %tmp.31 114 66 72 ];
+        lputv %stationId.4 %tmp.31;
+        symbol [ stationId %stationId.4 114 28 37 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 115 24 ]
+        %tmp.32 = lgetv %firstStation.3;
+        symbol [ firstStation %tmp.32 115 39 51 ];
+        symbol [ get %tmp.33 115 52 55 ];
+        %tmp.33 = getv function %tmp.32 :get;
+        %tmp.34 = "name";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.36 = as %tmp.35 String;
+        symbol [ String %tmp.36 115 67 73 ];
+        symbol [ mStationName ? 115 24 36 ];
+        putv self :mStationName %tmp.36;
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 117 24 ]
+        %tmp.37 = self;
+        symbol [ fetchDeparturesForStation %tmp.38 117 24 49 ];
+        %tmp.38 = getv function %tmp.37 :fetchDeparturesForStation;
+        %tmp.39 = lgetv %stationId.4;
+        symbol [ stationId %tmp.39 117 50 59 ];
+        invoke %tmp.37 %tmp.38(%tmp.39);
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 118 24 ]
         ret ?;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_38_116_12_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_12_116_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_109_12_116_12_if_end:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_74_117_8_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_8_117_8_if_end:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 118 8 ]
-        %tmp.39 = "Station Not Found";
-        symbol [ mStatusMessage ? 118 8 22 ];
-        putv self :mStatusMessage %tmp.39;
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 119 8 ]
-        symbol [ System %tmp.40 119 8 14 ];
-        %tmp.40 = getm $.Toybox.System;
-        symbol [ println %tmp.41 119 15 22 ];
-        %tmp.41 = getv function %tmp.40 :println;
-        %tmp.42 = "Station Lookup Error: ";
-        %tmp.43 = lgetv %responseCode;
-        symbol [ responseCode %tmp.43 119 50 62 ];
-        %tmp.44 = add %tmp.42 %tmp.43;
-        invoke %tmp.40 %tmp.41(%tmp.44);
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_106_130_120_4_stop:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_46_119_20_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_20_119_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_112_20_119_20_if_end:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_46_120_16_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_16_120_16_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_110_16_120_16_if_end:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_53_121_12_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_121_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_107_12_121_12_if_end:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 122 12 ]
+        %tmp.40 = "Station Not Found";
+        symbol [ mStatusMessage ? 122 12 26 ];
+        putv self :mStatusMessage %tmp.40;
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 123 12 ]
+        symbol [ System %tmp.41 123 12 18 ];
+        %tmp.41 = getm $.Toybox.System;
+        symbol [ println %tmp.42 123 19 26 ];
+        %tmp.42 = getv function %tmp.41 :println;
+        %tmp.43 = "Station Lookup Error: ";
+        %tmp.44 = lgetv %responseCode;
+        symbol [ responseCode %tmp.44 123 54 66 ];
+        %tmp.45 = add %tmp.43 %tmp.44;
+        invoke %tmp.41 %tmp.42(%tmp.45);
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_106_130_124_8_stop:
     }
-    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 122; @symbol_functiondef = [fetchDeparturesForStation,122,21,46]; @symbol_param<0> = [stationId,122,47,56]; @symbol_param<0>_type<0> = [String,122,60,66]; ]
+    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 126; @symbol_functiondef = [fetchDeparturesForStation,126,21,46]; @symbol_param<0> = [stationId,126,47,56]; @symbol_param<0>_type<0> = [String,126,60,66]; ]
     private
     function fetchDeparturesForStation(stationId as String) as Void {
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 123 8 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_stop" ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 127 8 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_stop" ]
         %url.1 = local;
-        symbol [ url %url.1 123 12 15 ];
+        symbol [ url %url.1 127 12 15 ];
         %tmp.1 = "https://v6.db.transport.rest/stops/";
         %tmp.2 = lgetv %stationId;
-        symbol [ stationId %tmp.2 123 58 67 ];
+        symbol [ stationId %tmp.2 127 58 67 ];
         %tmp.3 = add %tmp.1 %tmp.2;
         %tmp.4 = "/departures";
         %tmp.5 = add %tmp.3 %tmp.4;
         lputv %url.1 %tmp.5;
-        symbol [ url %url.1 123 12 15 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 124 8 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_stop" ]
+        symbol [ url %url.1 127 12 15 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 128 8 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_stop" ]
         %params.2 = local;
-        symbol [ params %params.2 124 12 18 ];
+        symbol [ params %params.2 128 12 18 ];
         %tmp.6 = newd 4;
         %tmp.7 = "results";
         %tmp.8 = "3";
@@ -826,474 +838,474 @@ _home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_star
         %tmp.21 = dup %tmp.18;
         %tmp.22 = aputv %tmp.21 %tmp.19 %tmp.20;
         lputv %params.2 %tmp.22;
-        symbol [ params %params.2 124 12 18 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 131 8 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_stop" ]
+        symbol [ params %params.2 128 12 18 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 135 8 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_stop" ]
         %options.3 = local;
-        symbol [ options %options.3 131 12 19 ];
+        symbol [ options %options.3 135 12 19 ];
         %tmp.23 = newd 2;
         %tmp.25 = const :method;
-        symbol [ method %tmp.25 132 13 19 const ];
-        symbol [ Communications %tmp.26 132 23 37 ];
+        symbol [ method %tmp.25 136 13 19 const ];
+        symbol [ Communications %tmp.26 136 23 37 ];
         %tmp.26 = getm $.Toybox.Communications;
-        symbol [ HTTP_REQUEST_METHOD_GET %tmp.27 132 38 61 ];
+        symbol [ HTTP_REQUEST_METHOD_GET %tmp.27 136 38 61 ];
         %tmp.27 = getv %tmp.26 :HTTP_REQUEST_METHOD_GET;
         %tmp.28 = dup %tmp.23;
         %tmp.29 = aputv %tmp.28 %tmp.25 %tmp.27;
         %tmp.31 = const :responseType;
-        symbol [ responseType %tmp.31 133 13 25 const ];
-        symbol [ Communications %tmp.32 133 29 43 ];
+        symbol [ responseType %tmp.31 137 13 25 const ];
+        symbol [ Communications %tmp.32 137 29 43 ];
         %tmp.32 = getm $.Toybox.Communications;
-        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.33 133 44 75 ];
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.33 137 44 75 ];
         %tmp.33 = getv %tmp.32 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
         %tmp.34 = dup %tmp.29;
         %tmp.35 = aputv %tmp.34 %tmp.31 %tmp.33;
         lputv %options.3 %tmp.35;
-        symbol [ options %options.3 131 12 19 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 136 8 ]
-        symbol [ Communications %tmp.36 136 8 22 ];
+        symbol [ options %options.3 135 12 19 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 140 8 ]
+        symbol [ Communications %tmp.36 140 8 22 ];
         %tmp.36 = getm $.Toybox.Communications;
-        symbol [ makeWebRequest %tmp.37 136 23 37 ];
+        symbol [ makeWebRequest %tmp.37 140 23 37 ];
         %tmp.37 = getv function %tmp.36 :makeWebRequest;
         %tmp.38 = lgetv %url.1;
-        symbol [ url %tmp.38 136 38 41 ];
+        symbol [ url %tmp.38 140 38 41 ];
         %tmp.39 = lgetv %params.2;
-        symbol [ params %tmp.39 136 43 49 ];
+        symbol [ params %tmp.39 140 43 49 ];
         %tmp.40 = lgetv %options.3;
-        symbol [ options %tmp.40 136 51 58 ];
+        symbol [ options %tmp.40 140 51 58 ];
         %tmp.41 = self;
-        symbol [ method %tmp.42 136 60 66 ];
+        symbol [ method %tmp.42 140 60 66 ];
         %tmp.42 = getv function %tmp.41 :method;
         %tmp.44 = const :onDeparturesReceived;
-        symbol [ onDeparturesReceived %tmp.44 136 68 88 const ];
+        symbol [ onDeparturesReceived %tmp.44 140 68 88 const ];
         %tmp.45 = invoke %tmp.41 %tmp.42(%tmp.44);
         invoke %tmp.36 %tmp.37(%tmp.38, %tmp.39, %tmp.40, %tmp.45);
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_122_76_137_4_stop:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_126_76_141_4_stop:
     }
-    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 140; @symbol_functiondef = [onDeparturesReceived,140,13,33]; @symbol_param<0> = [responseCode,140,34,46]; @symbol_param<0>_type<0> = [Number,140,50,56]; @symbol_param<1> = [data,140,58,62]; @symbol_param<1>_type<0> = [Dictionary,140,74,84]; @symbol_param<1>_type<1> = [String,140,88,94]; @symbol_param<1>_type<2> = [PersistedContent,140,98,114]; @symbol_param<1>_type<3> = [Iterator,140,115,123]; ]
+    [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 144; @symbol_functiondef = [onDeparturesReceived,144,13,33]; @symbol_param<0> = [responseCode,144,34,46]; @symbol_param<0>_type<0> = [Number,144,50,56]; @symbol_param<1> = [data,144,58,62]; @symbol_param<1>_type<0> = [Dictionary,144,74,84]; @symbol_param<1>_type<1> = [String,144,88,94]; @symbol_param<1>_type<2> = [PersistedContent,144,98,114]; @symbol_param<1>_type<3> = [Iterator,144,115,123]; ]
     function onDeparturesReceived(responseCode as Number, data as Null or Dictionary or String or PersistedContent.Iterator) as Void {
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_140_133_191_4_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 141 8 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_12_141_67_begin:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_12_141_43_begin:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_144_133_195_4_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 145 8 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_145_67_begin:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_145_43_begin:
         %tmp.1 = lgetv %responseCode;
-        symbol [ responseCode %tmp.1 141 12 24 ];
+        symbol [ responseCode %tmp.1 145 12 24 ];
         %tmp.2 = 200;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_else_false;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_35_141_43_true:
+        bf %tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_else_false;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_35_145_43_true:
         %tmp.4 = lgetv %data;
-        symbol [ data %tmp.4 141 35 39 ];
+        symbol [ data %tmp.4 145 35 39 ];
         %tmp.5 = null;
         %tmp.6 = ne %tmp.4 %tmp.5;
         push %tmp.6;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_35_141_43_end:
-        %tmp.7 = phi [%tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_12_141_43_begin] [%tmp.6 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_35_141_43_true] [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_35_141_43_end];
-        bf %tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_else_false;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_51_141_67_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_35_145_43_end:
+        %tmp.7 = phi [%tmp.3 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_145_43_begin] [%tmp.6 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_35_145_43_true] [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_35_145_43_end];
+        bf %tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_else_false;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_51_145_67_true:
         %tmp.8 = lgetv %data;
-        symbol [ data %tmp.8 141 51 55 ];
+        symbol [ data %tmp.8 145 51 55 ];
         %tmp.9 = as %tmp.8 { (!Null) };
-        symbol [ Dictionary %tmp.11 141 67 77 ];
+        symbol [ Dictionary %tmp.11 145 67 77 ];
         %tmp.11 = getv ? :Dictionary;
         %tmp.12 = isa %tmp.9 %tmp.11;
         push %tmp.12;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_51_141_67_end:
-        %tmp.13 = phi [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_12_141_67_begin] [%tmp.12 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_51_141_67_true] [%tmp.13 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_51_141_67_end];
-        bf %tmp.13 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_else_false;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_79_187_8_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 142 12 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_51_145_67_end:
+        %tmp.13 = phi [%tmp.7 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_145_67_begin] [%tmp.12 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_51_145_67_true] [%tmp.13 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_51_145_67_end];
+        bf %tmp.13 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_else_false;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_79_191_8_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 146 12 ]
         %tmp.14 = newa 0;
-        symbol [ mDepartures ? 142 12 23 ];
+        symbol [ mDepartures ? 146 12 23 ];
         putv self :mDepartures %tmp.14;
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 144 12 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_79_187_8_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_79_187_8_stop" ]
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 148 12 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_79_191_8_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_79_191_8_stop" ]
         %dictData.1 = local;
-        symbol [ dictData %dictData.1 144 16 24 ];
+        symbol [ dictData %dictData.1 148 16 24 ];
         %tmp.15 = lgetv %data;
-        symbol [ data %tmp.15 144 27 31 ];
+        symbol [ data %tmp.15 148 27 31 ];
         %tmp.16 = as %tmp.15 { (Dictionary) && (!Null) };
         %tmp.17 = as %tmp.16 Dictionary;
-        symbol [ Dictionary %tmp.17 144 35 45 ];
+        symbol [ Dictionary %tmp.17 148 35 45 ];
         lputv %dictData.1 %tmp.17;
-        symbol [ dictData %dictData.1 144 16 24 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 145 12 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_182_12_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_16_145_87_begin:
+        symbol [ dictData %dictData.1 148 16 24 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 149 12 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_12_186_12_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_16_149_87_begin:
         %tmp.18 = lgetv %dictData.1;
-        symbol [ dictData %tmp.18 145 16 24 ];
-        symbol [ hasKey %tmp.19 145 25 31 ];
+        symbol [ dictData %tmp.18 149 16 24 ];
+        symbol [ hasKey %tmp.19 149 25 31 ];
         %tmp.19 = getv function %tmp.18 :hasKey;
         %tmp.20 = "departures";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
-        bf %tmp.21 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_182_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_49_145_87_true:
+        bf %tmp.21 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_12_186_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_49_149_87_true:
         %tmp.22 = lgetv %dictData.1;
-        symbol [ dictData %tmp.22 145 49 57 ];
-        symbol [ get %tmp.23 145 58 61 ];
+        symbol [ dictData %tmp.22 149 49 57 ];
+        symbol [ get %tmp.23 149 58 61 ];
         %tmp.23 = getv function %tmp.22 :get;
         %tmp.24 = "departures";
         %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
-        symbol [ Array %tmp.27 145 87 92 ];
+        symbol [ Array %tmp.27 149 87 92 ];
         %tmp.27 = getv ? :Array;
         %tmp.28 = isa %tmp.25 %tmp.27;
         push %tmp.28;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_49_145_87_end:
-        %tmp.29 = phi [%tmp.21 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_16_145_87_begin] [%tmp.28 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_49_145_87_true] [%tmp.29 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_49_145_87_end];
-        bf %tmp.29 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_182_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_182_12_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_94_182_12_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 146 16 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_94_182_12_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_94_182_12_stop" ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_49_149_87_end:
+        %tmp.29 = phi [%tmp.21 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_16_149_87_begin] [%tmp.28 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_49_149_87_true] [%tmp.29 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_49_149_87_end];
+        bf %tmp.29 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_12_186_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_12_186_12_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_94_186_12_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 150 16 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_94_186_12_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_94_186_12_stop" ]
         %departuresList.2 = local;
-        symbol [ departuresList %departuresList.2 146 20 34 ];
+        symbol [ departuresList %departuresList.2 150 20 34 ];
         %tmp.30 = lgetv %dictData.1;
-        symbol [ dictData %tmp.30 146 37 45 ];
-        symbol [ get %tmp.31 146 46 49 ];
+        symbol [ dictData %tmp.30 150 37 45 ];
+        symbol [ get %tmp.31 150 46 49 ];
         %tmp.31 = getv function %tmp.30 :get;
         %tmp.32 = "departures";
         %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
         %tmp.34 = as %tmp.33 Array;
-        symbol [ Array %tmp.34 146 67 72 ];
+        symbol [ Array %tmp.34 150 67 72 ];
         lputv %departuresList.2 %tmp.34;
-        symbol [ departuresList %departuresList.2 146 20 34 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 148 16 ]
-        for @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_test @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_incr @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_init:
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_begin" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_end" ]
+        symbol [ departuresList %departuresList.2 150 20 34 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 152 16 ]
+        for @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_test @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_incr @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_init:
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_begin" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_end" ]
         %i.3 = local;
-        symbol [ i %i.3 148 25 26 ];
+        symbol [ i %i.3 152 25 26 ];
         %tmp.35 = 0;
         lputv %i.3 %tmp.35;
-        symbol [ i %i.3 148 25 26 ];
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_test:
+        symbol [ i %i.3 152 25 26 ];
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_test:
         %tmp.36 = lgetv %i.3;
-        symbol [ i %tmp.36 148 32 33 ];
+        symbol [ i %tmp.36 152 32 33 ];
         %tmp.37 = lgetv %departuresList.2;
-        symbol [ departuresList %tmp.37 148 36 50 ];
-        symbol [ size %tmp.38 148 51 55 ];
+        symbol [ departuresList %tmp.37 152 36 50 ];
+        symbol [ size %tmp.38 152 51 55 ];
         %tmp.38 = getv function %tmp.37 :size;
         %tmp.39 = invoke %tmp.37 %tmp.38();
         %tmp.40 = lt %tmp.36 %tmp.39;
-        bf %tmp.40 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_begin:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 149 20 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop" ]
+        bf %tmp.40 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_begin:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 153 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop" ]
         %dep.4 = local;
-        symbol [ dep %dep.4 149 24 27 ];
+        symbol [ dep %dep.4 153 24 27 ];
         %tmp.41 = lgetv %departuresList.2;
-        symbol [ departuresList %tmp.41 149 30 44 ];
+        symbol [ departuresList %tmp.41 153 30 44 ];
         %tmp.42 = lgetv %i.3;
-        symbol [ i %tmp.42 149 45 46 ];
+        symbol [ i %tmp.42 153 45 46 ];
         %tmp.43 = agetv %tmp.41 %tmp.42;
         %tmp.44 = as %tmp.43 Dictionary;
-        symbol [ Dictionary %tmp.44 149 51 61 ];
+        symbol [ Dictionary %tmp.44 153 51 61 ];
         lputv %dep.4 %tmp.44;
-        symbol [ dep %dep.4 149 24 27 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 151 20 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop" ]
+        symbol [ dep %dep.4 153 24 27 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 155 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop" ]
         %lineName.5 = local;
-        symbol [ lineName %lineName.5 151 24 32 ];
+        symbol [ lineName %lineName.5 155 24 32 ];
         %tmp.45 = "Train";
         lputv %lineName.5 %tmp.45;
-        symbol [ lineName %lineName.5 151 24 32 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 152 20 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_20_157_20_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_24_152_73_begin:
+        symbol [ lineName %lineName.5 155 24 32 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 156 20 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_20_161_20_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_24_156_73_begin:
         %tmp.46 = lgetv %dep.4;
-        symbol [ dep %tmp.46 152 24 27 ];
-        symbol [ hasKey %tmp.47 152 28 34 ];
+        symbol [ dep %tmp.46 156 24 27 ];
+        symbol [ hasKey %tmp.47 156 28 34 ];
         %tmp.47 = getv function %tmp.46 :hasKey;
         %tmp.48 = "line";
         %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
-        bf %tmp.49 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_20_157_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_46_152_73_true:
+        bf %tmp.49 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_20_161_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_46_156_73_true:
         %tmp.50 = lgetv %dep.4;
-        symbol [ dep %tmp.50 152 46 49 ];
-        symbol [ get %tmp.51 152 50 53 ];
+        symbol [ dep %tmp.50 156 46 49 ];
+        symbol [ get %tmp.51 156 50 53 ];
         %tmp.51 = getv function %tmp.50 :get;
         %tmp.52 = "line";
         %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
-        symbol [ Dictionary %tmp.55 152 73 83 ];
+        symbol [ Dictionary %tmp.55 156 73 83 ];
         %tmp.55 = getv ? :Dictionary;
         %tmp.56 = isa %tmp.53 %tmp.55;
         push %tmp.56;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_46_152_73_end:
-        %tmp.57 = phi [%tmp.49 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_24_152_73_begin] [%tmp.56 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_46_152_73_true] [%tmp.57 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_46_152_73_end];
-        bf %tmp.57 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_20_157_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_20_157_20_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_85_157_20_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 153 24 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_85_157_20_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_85_157_20_stop" ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_46_156_73_end:
+        %tmp.57 = phi [%tmp.49 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_24_156_73_begin] [%tmp.56 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_46_156_73_true] [%tmp.57 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_46_156_73_end];
+        bf %tmp.57 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_20_161_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_20_161_20_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_85_161_20_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 157 24 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_85_161_20_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_85_161_20_stop" ]
         %lineDict.6 = local;
-        symbol [ lineDict %lineDict.6 153 28 36 ];
+        symbol [ lineDict %lineDict.6 157 28 36 ];
         %tmp.58 = lgetv %dep.4;
-        symbol [ dep %tmp.58 153 39 42 ];
-        symbol [ get %tmp.59 153 43 46 ];
+        symbol [ dep %tmp.58 157 39 42 ];
+        symbol [ get %tmp.59 157 43 46 ];
         %tmp.59 = getv function %tmp.58 :get;
         %tmp.60 = "line";
         %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
         %tmp.62 = as %tmp.61 Dictionary;
-        symbol [ Dictionary %tmp.62 153 58 68 ];
+        symbol [ Dictionary %tmp.62 157 58 68 ];
         lputv %lineDict.6 %tmp.62;
-        symbol [ lineDict %lineDict.6 153 28 36 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 154 24 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_24_156_24_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_28_154_79_begin:
+        symbol [ lineDict %lineDict.6 157 28 36 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 158 24 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_24_160_24_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_28_158_79_begin:
         %tmp.63 = lgetv %lineDict.6;
-        symbol [ lineDict %tmp.63 154 28 36 ];
-        symbol [ hasKey %tmp.64 154 37 43 ];
+        symbol [ lineDict %tmp.63 158 28 36 ];
+        symbol [ hasKey %tmp.64 158 37 43 ];
         %tmp.64 = getv function %tmp.63 :hasKey;
         %tmp.65 = "name";
         %tmp.66 = invoke %tmp.63 %tmp.64(%tmp.65);
-        bf %tmp.66 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_24_156_24_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_55_154_79_true:
+        bf %tmp.66 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_24_160_24_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_55_158_79_true:
         %tmp.67 = lgetv %lineDict.6;
-        symbol [ lineDict %tmp.67 154 55 63 ];
-        symbol [ get %tmp.68 154 64 67 ];
+        symbol [ lineDict %tmp.67 158 55 63 ];
+        symbol [ get %tmp.68 158 64 67 ];
         %tmp.68 = getv function %tmp.67 :get;
         %tmp.69 = "name";
         %tmp.70 = invoke %tmp.67 %tmp.68(%tmp.69);
         %tmp.71 = null;
         %tmp.72 = ne %tmp.70 %tmp.71;
         push %tmp.72;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_55_154_79_end:
-        %tmp.73 = phi [%tmp.66 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_28_154_79_begin] [%tmp.72 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_55_154_79_true] [%tmp.73 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_55_154_79_end];
-        bf %tmp.73 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_24_156_24_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_24_156_24_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_85_156_24_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 155 28 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_55_158_79_end:
+        %tmp.73 = phi [%tmp.66 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_28_158_79_begin] [%tmp.72 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_55_158_79_true] [%tmp.73 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_55_158_79_end];
+        bf %tmp.73 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_24_160_24_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_24_160_24_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_85_160_24_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 159 28 ]
         %tmp.74 = lgetv %lineDict.6;
-        symbol [ lineDict %tmp.74 155 39 47 ];
-        symbol [ get %tmp.75 155 48 51 ];
+        symbol [ lineDict %tmp.74 159 39 47 ];
+        symbol [ get %tmp.75 159 48 51 ];
         %tmp.75 = getv function %tmp.74 :get;
         %tmp.76 = "name";
         %tmp.77 = invoke %tmp.74 %tmp.75(%tmp.76);
         %tmp.78 = as %tmp.77 String;
-        symbol [ String %tmp.78 155 63 69 ];
+        symbol [ String %tmp.78 159 63 69 ];
         lputv %lineName.5 %tmp.78;
-        symbol [ lineName %lineName.5 155 28 36 ];
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_85_156_24_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_24_156_24_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_154_24_156_24_if_end:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_85_157_20_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_20_157_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_20_157_20_if_end:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 159 20 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop" ]
+        symbol [ lineName %lineName.5 159 28 36 ];
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_85_160_24_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_24_160_24_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_158_24_160_24_if_end:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_85_161_20_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_20_161_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_156_20_161_20_if_end:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 163 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop" ]
         %direction.7 = local;
-        symbol [ direction %direction.7 159 24 33 ];
+        symbol [ direction %direction.7 163 24 33 ];
         %tmp.79 = "Unknown";
         lputv %direction.7 %tmp.79;
-        symbol [ direction %direction.7 159 24 33 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 160 20 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_20_162_20_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_24_160_75_begin:
+        symbol [ direction %direction.7 163 24 33 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 164 20 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_20_166_20_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_24_164_75_begin:
         %tmp.80 = lgetv %dep.4;
-        symbol [ dep %tmp.80 160 24 27 ];
-        symbol [ hasKey %tmp.81 160 28 34 ];
+        symbol [ dep %tmp.80 164 24 27 ];
+        symbol [ hasKey %tmp.81 164 28 34 ];
         %tmp.81 = getv function %tmp.80 :hasKey;
         %tmp.82 = "direction";
         %tmp.83 = invoke %tmp.80 %tmp.81(%tmp.82);
-        bf %tmp.83 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_20_162_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_51_160_75_true:
+        bf %tmp.83 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_20_166_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_51_164_75_true:
         %tmp.84 = lgetv %dep.4;
-        symbol [ dep %tmp.84 160 51 54 ];
-        symbol [ get %tmp.85 160 55 58 ];
+        symbol [ dep %tmp.84 164 51 54 ];
+        symbol [ get %tmp.85 164 55 58 ];
         %tmp.85 = getv function %tmp.84 :get;
         %tmp.86 = "direction";
         %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
         %tmp.88 = null;
         %tmp.89 = ne %tmp.87 %tmp.88;
         push %tmp.89;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_51_160_75_end:
-        %tmp.90 = phi [%tmp.83 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_24_160_75_begin] [%tmp.89 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_51_160_75_true] [%tmp.90 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_51_160_75_end];
-        bf %tmp.90 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_20_162_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_20_162_20_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_81_162_20_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 161 24 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_51_164_75_end:
+        %tmp.90 = phi [%tmp.83 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_24_164_75_begin] [%tmp.89 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_51_164_75_true] [%tmp.90 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_51_164_75_end];
+        bf %tmp.90 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_20_166_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_20_166_20_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_81_166_20_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 165 24 ]
         %tmp.91 = lgetv %dep.4;
-        symbol [ dep %tmp.91 161 36 39 ];
-        symbol [ get %tmp.92 161 40 43 ];
+        symbol [ dep %tmp.91 165 36 39 ];
+        symbol [ get %tmp.92 165 40 43 ];
         %tmp.92 = getv function %tmp.91 :get;
         %tmp.93 = "direction";
         %tmp.94 = invoke %tmp.91 %tmp.92(%tmp.93);
         %tmp.95 = as %tmp.94 String;
-        symbol [ String %tmp.95 161 60 66 ];
+        symbol [ String %tmp.95 165 60 66 ];
         lputv %direction.7 %tmp.95;
-        symbol [ direction %direction.7 161 24 33 ];
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_81_162_20_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_20_162_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_160_20_162_20_if_end:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 164 20 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop" ]
+        symbol [ direction %direction.7 165 24 33 ];
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_81_166_20_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_20_166_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_164_20_166_20_if_end:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 168 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop" ]
         %rawTime.8 = local;
-        symbol [ rawTime %rawTime.8 164 24 31 ];
+        symbol [ rawTime %rawTime.8 168 24 31 ];
         %tmp.96 = "";
         lputv %rawTime.8 %tmp.96;
-        symbol [ rawTime %rawTime.8 164 24 31 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 165 20 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_20_167_20_if_stmt:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_24_165_65_begin:
+        symbol [ rawTime %rawTime.8 168 24 31 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 169 20 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_20_171_20_if_stmt:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_24_169_65_begin:
         %tmp.97 = lgetv %dep.4;
-        symbol [ dep %tmp.97 165 24 27 ];
-        symbol [ hasKey %tmp.98 165 28 34 ];
+        symbol [ dep %tmp.97 169 24 27 ];
+        symbol [ hasKey %tmp.98 169 28 34 ];
         %tmp.98 = getv function %tmp.97 :hasKey;
         %tmp.99 = "when";
         %tmp.100 = invoke %tmp.97 %tmp.98(%tmp.99);
-        bf %tmp.100 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_20_167_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_46_165_65_true:
+        bf %tmp.100 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_20_171_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_46_169_65_true:
         %tmp.101 = lgetv %dep.4;
-        symbol [ dep %tmp.101 165 46 49 ];
-        symbol [ get %tmp.102 165 50 53 ];
+        symbol [ dep %tmp.101 169 46 49 ];
+        symbol [ get %tmp.102 169 50 53 ];
         %tmp.102 = getv function %tmp.101 :get;
         %tmp.103 = "when";
         %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
         %tmp.105 = null;
         %tmp.106 = ne %tmp.104 %tmp.105;
         push %tmp.106;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_46_165_65_end:
-        %tmp.107 = phi [%tmp.100 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_24_165_65_begin] [%tmp.106 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_46_165_65_true] [%tmp.107 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_46_165_65_end];
-        bf %tmp.107 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_20_167_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_20_167_20_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_71_167_20_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 166 24 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_46_169_65_end:
+        %tmp.107 = phi [%tmp.100 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_24_169_65_begin] [%tmp.106 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_46_169_65_true] [%tmp.107 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_46_169_65_end];
+        bf %tmp.107 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_20_171_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_20_171_20_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_71_171_20_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 170 24 ]
         %tmp.108 = lgetv %dep.4;
-        symbol [ dep %tmp.108 166 34 37 ];
-        symbol [ get %tmp.109 166 38 41 ];
+        symbol [ dep %tmp.108 170 34 37 ];
+        symbol [ get %tmp.109 170 38 41 ];
         %tmp.109 = getv function %tmp.108 :get;
         %tmp.110 = "when";
         %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
         %tmp.112 = as %tmp.111 String;
-        symbol [ String %tmp.112 166 53 59 ];
+        symbol [ String %tmp.112 170 53 59 ];
         lputv %rawTime.8 %tmp.112;
-        symbol [ rawTime %rawTime.8 166 24 31 ];
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_71_167_20_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_20_167_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_165_20_167_20_if_end:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 169 20 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop" ]
+        symbol [ rawTime %rawTime.8 170 24 31 ];
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_71_171_20_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_20_171_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_169_20_171_20_if_end:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 173 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop" ]
         %formattedTime.9 = local;
-        symbol [ formattedTime %formattedTime.9 169 24 37 ];
+        symbol [ formattedTime %formattedTime.9 173 24 37 ];
         %tmp.113 = "";
         lputv %formattedTime.9 %tmp.113;
-        symbol [ formattedTime %formattedTime.9 169 24 37 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 170 20 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_20_172_20_if_stmt:
+        symbol [ formattedTime %formattedTime.9 173 24 37 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 174 20 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_20_176_20_if_stmt:
         %tmp.114 = lgetv %rawTime.8;
-        symbol [ rawTime %tmp.114 170 24 31 ];
-        symbol [ length %tmp.115 170 32 38 ];
+        symbol [ rawTime %tmp.114 174 24 31 ];
+        symbol [ length %tmp.115 174 32 38 ];
         %tmp.115 = getv function %tmp.114 :length;
         %tmp.116 = invoke %tmp.114 %tmp.115();
         %tmp.117 = 16;
         %tmp.118 = gte %tmp.116 %tmp.117;
-        bf %tmp.118 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_20_172_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_20_172_20_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_48_172_20_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 171 24 ]
+        bf %tmp.118 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_20_176_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_20_176_20_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_48_176_20_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 175 24 ]
         %tmp.119 = lgetv %rawTime.8;
-        symbol [ rawTime %tmp.119 171 40 47 ];
-        symbol [ substring %tmp.120 171 48 57 ];
+        symbol [ rawTime %tmp.119 175 40 47 ];
+        symbol [ substring %tmp.120 175 48 57 ];
         %tmp.120 = getv function %tmp.119 :substring;
         %tmp.121 = 11;
         %tmp.122 = 16;
         %tmp.123 = invoke %tmp.119 %tmp.120(%tmp.121, %tmp.122);
         lputv %formattedTime.9 %tmp.123;
-        symbol [ formattedTime %formattedTime.9 171 24 37 ];
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_48_172_20_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_20_172_20_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_170_20_172_20_if_end:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 174 20 ]
-        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop" ]
+        symbol [ formattedTime %formattedTime.9 175 24 37 ];
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_48_176_20_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_20_176_20_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_174_20_176_20_if_end:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 178 20 ]
+        [ "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_start" "_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop" ]
         %item.10 = local;
-        symbol [ item %item.10 174 24 28 ];
+        symbol [ item %item.10 178 24 28 ];
         %tmp.124 = newd 3;
         %tmp.125 = "line";
         %tmp.126 = lgetv %lineName.5;
-        symbol [ lineName %tmp.126 175 34 42 ];
+        symbol [ lineName %tmp.126 179 34 42 ];
         %tmp.127 = dup %tmp.124;
         %tmp.128 = aputv %tmp.127 %tmp.125 %tmp.126;
         %tmp.129 = "direction";
         %tmp.130 = lgetv %direction.7;
-        symbol [ direction %tmp.130 176 39 48 ];
+        symbol [ direction %tmp.130 180 39 48 ];
         %tmp.131 = dup %tmp.128;
         %tmp.132 = aputv %tmp.131 %tmp.129 %tmp.130;
         %tmp.133 = "time";
         %tmp.134 = lgetv %formattedTime.9;
-        symbol [ formattedTime %tmp.134 177 34 47 ];
+        symbol [ formattedTime %tmp.134 181 34 47 ];
         %tmp.135 = dup %tmp.132;
         %tmp.136 = aputv %tmp.135 %tmp.133 %tmp.134;
         lputv %item.10 %tmp.136;
-        symbol [ item %item.10 174 24 28 ];
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 180 20 ]
-        symbol [ mDepartures %tmp.138 180 20 31 ];
+        symbol [ item %item.10 178 24 28 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 184 20 ]
+        symbol [ mDepartures %tmp.138 184 20 31 ];
         %tmp.138 = getv ? :mDepartures;
-        symbol [ add %tmp.139 180 32 35 ];
+        symbol [ add %tmp.139 184 32 35 ];
         %tmp.139 = getv function %tmp.138 :add;
         %tmp.140 = lgetv %item.10;
-        symbol [ item %tmp.140 180 36 40 ];
+        symbol [ item %tmp.140 184 36 40 ];
         invoke %tmp.138 %tmp.139(%tmp.140);
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_64_181_16_stop:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_incr:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 148 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_64_185_16_stop:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_incr:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 152 ]
         %tmp.143 = lgetv %i.3;
-        symbol [ i %tmp.143 148 59 60 ];
+        symbol [ i %tmp.143 152 59 60 ];
         %tmp.144 = add %tmp.143 1;
         lputv %i.3 %tmp.144;
-        symbol [ i %i.3 148 59 60 ];
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_test;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_148_16_181_16_for_end:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_94_182_12_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_182_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_12_182_12_if_end:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 184 12 ]
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_12_186_12_if_stmt:
-        symbol [ mDepartures %tmp.146 184 16 27 ];
+        symbol [ i %i.3 152 59 60 ];
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_test;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_152_16_185_16_for_end:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_94_186_12_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_12_186_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_149_12_186_12_if_end:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 188 12 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_12_190_12_if_stmt:
+        symbol [ mDepartures %tmp.146 188 16 27 ];
         %tmp.146 = getv ? :mDepartures;
-        symbol [ size %tmp.147 184 28 32 ];
+        symbol [ size %tmp.147 188 28 32 ];
         %tmp.147 = getv function %tmp.146 :size;
         %tmp.148 = invoke %tmp.146 %tmp.147();
         %tmp.149 = 0;
         %tmp.150 = eq %tmp.148 %tmp.149;
-        bf %tmp.150 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_12_186_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_12_186_12_if_true:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_41_186_12_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 185 16 ]
+        bf %tmp.150 @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_12_190_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_12_190_12_if_true:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_41_190_12_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 189 16 ]
         %tmp.151 = "No Trains Nearby";
-        symbol [ mStatusMessage ? 185 16 30 ];
+        symbol [ mStatusMessage ? 189 16 30 ];
         putv self :mStatusMessage %tmp.151;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_41_186_12_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_12_186_12_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_184_12_186_12_if_end:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_79_187_8_stop:
-        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_end;
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_else_false:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_187_15_190_8_start:
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 188 12 ]
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_41_190_12_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_12_190_12_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_188_12_190_12_if_end:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_79_191_8_stop:
+        goto @_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_end;
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_else_false:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_191_15_194_8_start:
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 192 12 ]
         %tmp.152 = "DB Fetch Error (";
         %tmp.153 = lgetv %responseCode;
-        symbol [ responseCode %tmp.153 188 50 62 ];
+        symbol [ responseCode %tmp.153 192 50 62 ];
         %tmp.154 = add %tmp.152 %tmp.153;
         %tmp.155 = ")";
         %tmp.156 = add %tmp.154 %tmp.155;
-        symbol [ mStatusMessage ? 188 12 26 ];
+        symbol [ mStatusMessage ? 192 12 26 ];
         putv self :mStatusMessage %tmp.156;
-[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 189 12 ]
-        symbol [ System %tmp.157 189 12 18 ];
+[ "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc" 193 12 ]
+        symbol [ System %tmp.157 193 12 18 ];
         %tmp.157 = getm $.Toybox.System;
-        symbol [ println %tmp.158 189 19 26 ];
+        symbol [ println %tmp.158 193 19 26 ];
         %tmp.158 = getv function %tmp.157 :println;
         %tmp.159 = "Departure Fetch Error: ";
         %tmp.160 = lgetv %responseCode;
-        symbol [ responseCode %tmp.160 189 55 67 ];
+        symbol [ responseCode %tmp.160 193 55 67 ];
         %tmp.161 = add %tmp.159 %tmp.160;
         invoke %tmp.157 %tmp.158(%tmp.161);
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_187_15_190_8_stop:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_141_8_190_8_if_end:
-_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_140_133_191_4_stop:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_191_15_194_8_stop:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_145_8_194_8_if_end:
+_home_futurk_Documents_DBDepartures_source_DBDeparturesView_mc_144_133_195_4_stop:
     }
 }
 [ @file = "/home/futurk/Documents/DBDepartures/source/DBDeparturesView.mc"; @line = 1; ]

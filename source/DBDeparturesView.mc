@@ -104,20 +104,24 @@ class DBDeparturesView extends WatchUi.DataField {
 
     // Fixed parameter type signature matching Garmin's strict web request requirement
     function onStationReceived(responseCode as Number, data as Null or Dictionary or String or PersistedContent.Iterator) as Void {
-        if (responseCode == 200 && data != null && data instanceof Array) {
-            var arrayData = data as Array;
-            if (arrayData.size() > 0) {
-                var firstStation = arrayData[0] as Dictionary;
-                var stationId = firstStation.get("id") as String;
-                mStationName = firstStation.get("name") as String;
-                
-                fetchDeparturesForStation(stationId);
-                return;
+            if (responseCode == 200 && data != null) {
+                // Cast to Object to allow type checking and casting to Array without compiler warnings
+                var rawData = data as Object;
+                if (rawData instanceof Array) {
+                    var arrayData = rawData as Array;
+                    if (arrayData.size() > 0) {
+                        var firstStation = arrayData[0] as Dictionary;
+                        var stationId = firstStation.get("id") as String;
+                        mStationName = firstStation.get("name") as String;
+                        
+                        fetchDeparturesForStation(stationId);
+                        return;
+                    }
+                }
             }
+            mStatusMessage = "Station Not Found";
+            System.println("Station Lookup Error: " + responseCode);
         }
-        mStatusMessage = "Station Not Found";
-        System.println("Station Lookup Error: " + responseCode);
-    }
 
     private function fetchDeparturesForStation(stationId as String) as Void {
         var url = "https://v6.db.transport.rest/stops/" + stationId + "/departures";
